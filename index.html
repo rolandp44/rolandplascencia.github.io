@@ -1,35 +1,147 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>My Website</title>
+    <meta charset="UTF-8">
+    <title>Roland Plascencia | About Me</title>
+
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0;
+            background-color: #f4f6f8;
+            color: #333;
+            line-height: 1.6;
+        }
+        /* Navigation */
+        nav {
+            background-color: #1f2933;
+            padding: 15px 30px;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 25px;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav a {
+            color: #ffffff;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        /* Main content */
+        .container {
+            max-width: 900px;
+            margin: 40px auto;
+            background: #ffffff;
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 10px;
+        }
+
+        h2 {
+            border-bottom: 2px solid #e5e7eb;
+            padding-bottom: 5px;
+            margin-top: 40px;
+        }
+
+        h3 {
+            margin-top: 30px;
+            color: #1f2933;
+        }
+
+        h4 {
+            margin-top: 20px;
+            color: #374151;
+        }
+
+        p {
+            margin-top: 10px;
+        }
+
+        /* Footer-style emphasis section */
+        .highlight {
+            background-color: #f1f5f9;
+            padding: 20px;
+            border-left: 5px solid #1f2933;
+            margin-top: 30px;
+            border-radius: 4px;
+        }
+    </style>
 </head>
+
 <body>
+
     <nav>
-        <ul style="list-style-type: none; display: flex; gap: 20px; padding: 0;">
+        <ul>
             <li><a href="index.html">Home</a></li>
             <li><a href="projects.html">Projects</a></li>
-            <li><a href="WhatIliketodo.html">What I like to do</a></li>
-    </ul>
+            <li><a href="WhatIliketodo.html">What I Like to Do</a></li>
+        </ul>
     </nav>
-    <hr>
-    <h1>About me - Roland Plascencia</h1>
-    <h2>My Philosophy</h2>
-    <p>In my senior year, I played on an undersized football team. I realized quickly that leadership isn’t about barking orders; it’s about creating an environment where everyone feels supported.
-        When I saw the underclassmen struggling, I didn't just give them the "what" I gave them the "why." I went back to the fundamentals, explaining the reasons behind every movement. Even when tensions rose between players, 
-        I stepped in to defuse the situation individually, prioritizing the unity of the group over ego. By keeping the atmosphere light with humor but stern with expectations, I watched a struggling group become the most unified 
-        unit on the team. To me, leadership is building a bond with empathy, consistency, and trust.</p>
-    <h3>Resilience</h3>
-    <p>The most defining parts of my life have come from the challenges that forced me to restart. At 14, I was separated from my parents, losing the stability I had known my entire life. I entered high school lost, and for a long time, 
-        I used football as my only anchor. While football taught me how to take hits and keep pushing, I eventually realized I was using it to mask deeper emotional struggles. When I hit a low point in my junior year, I had to stop and 
-        rethink who I was outside of the sport.</p>
-    <h3>What I learned from the "rebuild":</h4>
-    <h4>Academic Drive:</h4>
-    <p>I recognized that my past grades reflected my survival mode, not my potential. I am now committed to bringing the same work ethic I had on the field into the classroom.</p>
-    <h4>Emotional Resilience:</h4>
-    <p>Spending time in deep mindfulness taught me how to balance my life and reconnect with my original passions.</p>
-    <h4>Looking Forward</h4>
-    <p>I am more than just a student, an athlete, or an artist. I am someone who has lost their identity and had the strength to build a better one from scratch. Whether I am leading a team, designing a map, or tackling a new academic 
-        challenge, I bring a perspective shaped by resilience and a drive to create things that bring people joy.</p>
-    
+
+    <div class="container">
+        <h1>About Me</h1>
+        <p style="text-align:center;"><strong>Roland Plascencia</strong></p>
+
+        <h2>My Philosophy</h2>
+        <p>
+            In my senior year, I played on an undersized football team. I realized quickly that leadership isn’t about barking orders; it’s about creating an environment where everyone feels supported.
+            When I saw the underclassmen struggling, I didn’t just give them the <em>what</em> — I gave them the <em>why</em>.
+        </p>
+        <p>
+            I went back to the fundamentals, explaining the reasons behind every movement. Even when tensions rose between players, I stepped in to defuse situations individually, prioritizing unity over ego.
+            By keeping the atmosphere light with humor but firm with expectations, I watched a struggling group become the most unified unit on the team.
+        </p>
+        <p>
+            To me, leadership is about building bonds through empathy, consistency, and trust.
+        </p>
+
+        <h3>Resilience</h3>
+        <p>
+            The most defining parts of my life have come from challenges that forced me to restart. At 14, I was separated from my parents, losing the stability I had known my entire life.
+            I entered high school lost, using football as my only anchor.
+        </p>
+        <p>
+            While football taught me how to take hits and keep pushing, I eventually realized I was using it to mask deeper emotional struggles.
+            When I hit a low point in my junior year, I had to stop and rethink who I was outside of the sport.
+        </p>
+
+        <h3>What I Learned From the Rebuild</h3>
+
+        <h4>Academic Drive</h4>
+        <p>
+            I recognized that my past grades reflected survival mode, not my potential.
+            I am now committed to bringing the same work ethic I had on the field into the classroom.
+        </p>
+
+        <h4>Emotional Resilience</h4>
+        <p>
+            Spending time in mindfulness taught me how to balance my life and reconnect with my original passions.
+        </p>
+
+        <div class="highlight">
+            <h4>Looking Forward</h4>
+            <p>
+                I am more than just a student or an athlete.
+                I am someone who lost their identity and had the strength to rebuild it.
+                Whether I am leading a team or tackling a new academic challenge,
+                I bring a perspective shaped by resilience and a drive to create things that bring people joy.
+            </p>
+        </div>
+    </div>
+
 </body>
 </html>
