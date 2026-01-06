@@ -39,7 +39,7 @@
 
         /* Main container */
         .container {
-            max-width: 900px;
+            max-width: 1000px;
             margin: 40px auto;
             background: white;
             padding: 40px;
@@ -52,37 +52,35 @@
         }
 
         h2 {
-            margin-top: 40px;
+            margin-top: 50px;
             border-bottom: 2px solid #e5e7eb;
             padding-bottom: 5px;
         }
 
         p {
             text-align: center;
-            margin-bottom: 20px;
         }
 
-        /* Image layout */
-        .image-group {
-            display: flex;
-            justify-content: center;
-            flex-wrap: wrap;
+        /* === BALANCED IMAGE GRID === */
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
             gap: 20px;
-            margin-top: 20px;
+            margin-top: 25px;
         }
 
-        /* Default image behavior — NO STRETCHING */
-        .image-group img {
-            max-width: 260px;
+        .gallery img {
             width: 100%;
             height: auto;
             border-radius: 8px;
             box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+            display: block;
         }
 
-        /* Smaller images (dogs) */
-        .small-img {
-            max-width: 200px;
+        /* Slightly smaller images (dogs) */
+        .small {
+            max-width: 220px;
+            margin: auto;
         }
     </style>
 </head>
@@ -101,22 +99,22 @@
         <h1>My Family</h1>
         <p>Us during my senior night</p>
 
-        <div class="image-group">
-            <img src="fbfam.jpg" alt="A photo of my family and I on my senior night for football">
+        <div class="gallery">
+            <img src="fbfam.jpg" alt="Family senior night photo">
         </div>
 
         <h2>My Siblings and I</h2>
 
-        <div class="image-group">
-            <img src="theboys.jpg" alt="A photo of my two brothers after school">
-            <img src="realoregon.jpg" alt="A photo of my twin brother and older sister">
+        <div class="gallery">
+            <img src="theboys.jpg" alt="My brothers after school">
+            <img src="realoregon.jpg" alt="My twin brother and older sister">
         </div>
 
         <h2>My Dogs</h2>
 
-        <div class="image-group">
-            <img src="puaandgigi.jpg" alt="Pua and Gigi" class="small-img">
-            <img src="bellaa.jpg" alt="Bella" class="small-img">
+        <div class="gallery">
+            <img src="puaandgigi.jpg" alt="Pua and Gigi" class="small">
+            <img src="bellaa.jpg" alt="Bella" class="small">
         </div>
     </div>
 
