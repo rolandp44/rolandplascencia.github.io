@@ -1,18 +1,151 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>My GitHub Website</title>
+    <meta charset="UTF-8">
+    <title>Roland Plascencia | What I Like to Do</title>
+
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0;
+            background-color: #f4f6f8;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        /* Navigation */
+        nav {
+            background-color: #1f2933;
+            padding: 15px 30px;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 25px;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        /* Main container */
+        .container {
+            max-width: 900px;
+            margin: 40px auto;
+            background: white;
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h1, h2 {
+            text-align: center;
+        }
+
+        h2 {
+            margin-top: 50px;
+            border-bottom: 2px solid #e5e7eb;
+            padding-bottom: 5px;
+        }
+
+        p {
+            margin-top: 15px;
+        }
+
+        /* Feature sections */
+        .feature {
+            margin-top: 30px;
+        }
+
+        /* Image layout */
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+            gap: 20px;
+            margin-top: 25px;
+        }
+
+        .gallery img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+            display: block;
+        }
+
+        /* Highlight box */
+        .highlight {
+            background-color: #f1f5f9;
+            padding: 20px;
+            border-left: 5px solid #1f2933;
+            border-radius: 4px;
+            margin-top: 40px;
+        }
+    </style>
 </head>
+
 <body>
+
     <nav>
-        <ul style="list-style-type: none; display: flex; gap: 20px; padding: 0;">
+        <ul>
             <li><a href="index.html">Home</a></li>
             <li><a href="family.html">Family</a></li>
-            <li><a href="WhatIliketodo.html">What I like to do</a></li>
-    </ul>
+            <li><a href="WhatIliketodo.html">What I Like to Do</a></li>
+        </ul>
     </nav>
-    <hr>
-    <h1>Hello World!</h1>
-    <p>This website is hosted on GitHub Pages.</p>
+
+    <div class="container">
+        <h1>What I Like to Do</h1>
+
+        <div class="feature">
+            <h2>Working Out</h2>
+            <p>
+                Working out is more than just physical training for me — it’s a way to build discipline and mental strength.
+                Whether I’m lifting weights or pushing myself through a tough workout, I see it as a way to improve not just
+                my body, but my mindset.
+            </p>
+            <p>
+                Fitness has taught me consistency. Progress doesn’t happen overnight, and learning to trust the process
+                has helped me in school, sports, and life. Every workout is a reminder that effort compounds over time.
+            </p>
+        </div>
+
+        <div class="feature">
+            <h2>Video Games</h2>
+            <p>
+                Video games are one of my favorite ways to relax and connect with friends. Games like
+                <strong>ARK: Survival Evolved</strong> and <strong>ARC Raiders</strong> stand out to me because they reward
+                teamwork, strategy, and creativity.
+            </p>
+            <p>
+                In ARK, I enjoy the survival aspect — gathering resources, building bases, and working together to overcome
+                challenges. ARC Raiders takes a more tactical approach, encouraging communication and coordination in
+                high-pressure situations.
+            </p>
+            <p>
+                These games aren’t just entertainment; they sharpen problem-solving skills and reinforce the importance
+                of collaboration, leadership, and adaptability.
+            </p>
+        </div>
+
+        <div class="highlight">
+            <h2>Why These Matter to Me</h2>
+            <p>
+                Whether I’m working out or gaming, both activities push me to grow in different ways.
+                One builds discipline and resilience, while the other encourages creativity and teamwork.
+                Together, they balance my life and help shape who I am.
+            </p>
+        </div>
+    </div>
+
 </body>
 </html>
